@@ -1,0 +1,89 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'Inter';
+    src: url('./fonts/Inter-Regular.ttf') format('truetype');
+    font-weight:400;
+}
+
+@font-face{
+    font-family:'Inter';
+    src: url('./fonts/Inter-Medium.ttf') format('truetype');
+    font-weight:500;
+}
+
+@font-face{
+    font-family:'Inter';
+    src:url('./fonts/Inter-Bold.ttf') format('truetype');
+    font-weight:700;
+}
+
+@font-face{
+    font-family: 'Inter';
+    src: url('./fonts/Inter-ExtraBold.ttf') format('truetype');
+    font-weight:800;
+}
+
+.primary{
+    color: #0D1530;
+}
+
+.secondary{
+    color: #FFFFFF;
+}
+.highlights{
+    color:#7B68EE;
+}
+.tag{
+    color: #F7486D;
+}
+.add{
+    color:#D41B69;
+}
+
+.discover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+    background-color: #0D1530;
+}
+
+.discover-text{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 100px;
+}
+
+.discover-button{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 30px 2px 30px;
+    background-color: #7B68EE;
+    border: none;
+    border-radius: 5px;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 0px 70px 0px 70px;
+    height: 90px;
+    box-shadow: 0 4px 6px rgba(0, 0,0, 0.2);
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+
+.nav-left>p{
+    margin-left: 30px;
+}
