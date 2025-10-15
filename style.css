@@ -264,6 +264,78 @@
   font-size: 14px;
 }
 
+.agenda {
+  margin: 50px 80px 0px 80px;
+  background-color: var(--primary);
+  padding: 80px 80px 40px 80px;
+  border-radius: 70px;
+}
+
+.agenda-title {
+  text-align: center;
+  color: var(--secondary);
+  margin-bottom: 2rem;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.agenda-card {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 120px 30px 180px;
+  border-radius: 15px;
+  margin-bottom: 70px;
+  /* align-items: flex-start; */
+}
+
+.card-info {
+  flex: 1;
+}
+
+.card-title {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-weight: 800;
+  font-size: 24px;
+  color: #333333;
+}
+
+.card-speaker {
+  color: #b9bec7;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card-speaker > strong {
+  color: #7c828d;
+}
+
+.card-images {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 210px;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.card-images > img,
+.card-images-3 > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.card-images-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 450px;
+  gap: 5px;
+}
+
 @media (max-width: 640px) {
   .discover {
     gap: 3px;
@@ -302,5 +374,32 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
+  }
+
+  .agenda {
+    margin: 40px 10px 0px 10px;
+    padding: 80px 10px 40px 10px;
+    border-radius: 15px;
+  }
+
+  .agenda-card {
+    flex-direction: column-reverse;
+    padding: 30px 7px 30px 7px;
+  }
+
+  .card-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  .card-images {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-images-3 {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }
