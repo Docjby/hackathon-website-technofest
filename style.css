@@ -34,6 +34,7 @@
   padding: 0%;
   box-sizing: border-box;
   font-family: var(--font-main);
+  scroll-behavior: smooth;
 }
 
 .top-bar {
@@ -92,11 +93,12 @@
   color: #333333;
 }
 
-.nav-left > p {
+.nav-left > a {
   font-size: 14px;
   margin-left: 30px;
   font-weight: 700;
   color: #333333;
+  text-decoration: none;
 }
 
 .btn-register {
@@ -265,7 +267,7 @@
 }
 
 .agenda {
-  margin: 50px 80px 0px 80px;
+  margin: 50px 80px 50px 80px;
   background-color: var(--primary);
   padding: 80px 80px 40px 80px;
   border-radius: 70px;
@@ -286,7 +288,6 @@
   padding: 30px 120px 30px 180px;
   border-radius: 15px;
   margin-bottom: 70px;
-  /* align-items: flex-start; */
 }
 
 .card-info {
@@ -334,6 +335,108 @@
   align-items: center;
   width: 450px;
   gap: 5px;
+}
+
+.articles {
+  background-color: var(--primary);
+  margin: 0px 80px 0px 80px;
+  border-radius: 70px;
+  padding: 80px 80px 70px 80px;
+}
+
+.article-title {
+  font-size: 42px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--secondary);
+  margin-bottom: 130px;
+}
+
+.article-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.article-cards {
+  background-color: var(--secondary);
+  flex: 1;
+  border-radius: 15px;
+}
+
+.article-info {
+  padding: 0px 25px 20px 25px;
+}
+
+.article-image > img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  height: 230px;
+  transform: translateY(-30%);
+}
+
+.article-card-title {
+  margin-top: -50px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.article-card-title-2 {
+  margin-top: -18px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.article-author {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  line-height: 1.4;
+}
+
+.avatar > img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.author-name {
+  color: #333333;
+  font-size: 12px;
+  font-weight: 700;
+}
+.author-position {
+  color: #7c828d;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.read-more {
+  padding: 15px 10px 15px 10px;
+}
+
+.read-more > p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.read-more > p > span {
+  color: aqua;
+}
+
+hr {
+  border: none;
+  height: 1.5px;
+  background-color: #e6e9f1;
 }
 
 @media (max-width: 640px) {
@@ -401,5 +504,15 @@
     max-width: 100%;
     align-items: center;
     justify-content: center;
+  }
+  .articles {
+    margin: 40px 10px 0px 10px;
+    border-radius: 10px;
+    padding: 80px 10px 40px 10px;
+  }
+
+  .article-container {
+    flex-direction: column;
+    gap: 100px;
   }
 }
