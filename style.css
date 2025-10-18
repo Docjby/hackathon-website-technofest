@@ -208,12 +208,12 @@
   gap: 80px;
   background-color: var(--primary);
   padding: 15px 0px 15px 0px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .featured-speakers {
   background-color: var(--primary);
-  margin: 0px 80px 0px 80px;
+  margin: 40px 80px 0px 80px;
   border-radius: 70px;
   padding: 80px 80px 70px 80px;
 }
@@ -339,7 +339,7 @@
 
 .articles {
   background-color: var(--primary);
-  margin: 0px 80px 0px 80px;
+  margin: 0px 80px 60px 80px;
   border-radius: 70px;
   padding: 80px 80px 70px 80px;
 }
@@ -439,16 +439,84 @@ hr {
   background-color: #e6e9f1;
 }
 
+.footer-section{
+  margin: 0px 120px 30px 120px;
+}
+
+.footer-links{
+  display: flex;
+  justify-content: flex-start;
+  gap: 150px;
+}
+.link{
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #514B81;
+}
+
+.link-main{
+  color: #333333;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.link:hover{
+  color: #7b68ee;
+  cursor: pointer;
+}
+
+.footer-bottom{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom-left{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+}
+
+.footer-bottom-left>h1{
+  font-size: 30px;
+  font-weight: 700;
+  color: #333333;
+}
+.footer-bottom-left>p{
+  font-size: 12px;
+  font-weight: 500;
+  color:#7c828d;
+}
+
+.footer-bottom-right{
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bottom-right> img{
+  height:  30px;
+  width: 30px;
+
+}
+
 @media (max-width: 640px) {
   .discover {
     gap: 3px;
     padding: 0px 5px 0px 5px;
+    flex-direction: column;
+    text-align: center;
   }
   .navbar {
     padding: 0px 5px 0px 5px;
   }
-  .nav-left > p {
+  .nav-left > a {
     margin-left: 5px;
+    font-size: 12px;
   }
   .hero-section {
     flex-direction: column;
@@ -465,11 +533,12 @@ hr {
   }
   .sponsors {
     gap: 30px;
+    
   }
 
   .featured-speakers {
     margin: 0px 10px 0px 10px;
-    padding: 50px 20px 20px 20px;
+    padding: 50px 10px 20px 10px;
     border-radius: 15px;
   }
 
@@ -481,13 +550,14 @@ hr {
 
   .agenda {
     margin: 40px 10px 0px 10px;
-    padding: 80px 10px 40px 10px;
+    padding: 80px 10px 10px 10px;
     border-radius: 15px;
   }
 
   .agenda-card {
     flex-direction: column-reverse;
     padding: 30px 7px 30px 7px;
+    margin-bottom: 30px;
   }
 
   .card-info {
@@ -506,7 +576,7 @@ hr {
     justify-content: center;
   }
   .articles {
-    margin: 40px 10px 0px 10px;
+    margin: 40px 10px 30px 10px;
     border-radius: 10px;
     padding: 80px 10px 40px 10px;
   }
@@ -514,5 +584,34 @@ hr {
   .article-container {
     flex-direction: column;
     gap: 100px;
+  }
+
+  .footer-section{
+    margin: 30px 10px 30px 10px;
+  }
+
+  .footer-links{
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+  }
+
+  .link-one{
+    flex: 2;
+  }
+  .link-two{
+    flex: 1;
+  }
+  .link-three{
+    flex: 1;
+  }
+
+  .footer-bottom{
+    flex-direction: column;
+  }
+
+  .footer-bottom-left{
+    flex-direction: column;
+    margin-bottom: 20px;
   }
 }
